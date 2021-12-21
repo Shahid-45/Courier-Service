@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Courier Service</string>
+    <string-array name="package_type">
+        <item>Select</item>
+        <item>Standard delivery</item>
+        <item>Speed delivery</item>
+    </string-array>
+
+</resources>

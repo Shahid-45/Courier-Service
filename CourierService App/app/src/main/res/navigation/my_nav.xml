@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/login">
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.courierservice.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" >
+        <action
+            android:id="@+id/action_login_to_menupage"
+            app:destination="@id/menupage"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_login_to_Delivery"
+            app:destination="@id/Delivery" />
+    </activity>
+    <activity
+        android:id="@+id/menupage"
+        android:name="com.example.courierservice.Menupage"
+        android:label="activity_menupage"
+        tools:layout="@layout/activity_menupage" >
+        <action
+            android:id="@+id/action_menupage_to_pickup1"
+            app:destination="@id/pickup1" />
+        <action
+            android:id="@+id/action_menupage_to_status"
+            app:destination="@id/status" />
+    </activity>
+    <activity
+        android:id="@+id/Delivery"
+        android:name="com.example.courierservice.Registration"
+        android:label="activity_delivery"
+        tools:layout="@layout/activity_2" />
+    <activity
+        android:id="@+id/status"
+        android:name="com.example.courierservice.Status"
+        android:label="activity_status"
+        tools:layout="@layout/activity_status" >
+        <action
+            android:id="@+id/action_status_to_menupage"
+            app:destination="@id/menupage" />
+    </activity>
+    <activity
+        android:id="@+id/confirmation"
+        android:name="com.example.courierservice.Confirmation"
+        android:label="activity_confirmation"
+        tools:layout="@layout/activity_confirmation" >
+        <action
+            android:id="@+id/action_confirmation_to_menupage"
+            app:destination="@id/menupage" />
+    </activity>
+    <activity
+        android:id="@+id/delivery3"
+        android:name="com.example.courierservice.Delivery"
+        android:label="activity_delivery"
+        tools:layout="@layout/activity_delivery" >
+        <action
+            android:id="@+id/action_delivery3_to_payment2"
+            app:destination="@id/payment2" />
+    </activity>
+    <activity
+        android:id="@+id/pickup1"
+        android:name="com.example.courierservice.Pickup1"
+        android:label="activity_pickup1"
+        tools:layout="@layout/activity_pickup1" >
+        <action
+            android:id="@+id/action_pickup1_to_delivery3"
+            app:destination="@id/delivery3" />
+    </activity>
+    <activity
+        android:id="@+id/payment2"
+        android:name="com.example.courierservice.Payment"
+        android:label="activity_payment"
+        tools:layout="@layout/activity_payment" >
+        <action
+            android:id="@+id/action_payment2_to_confirmation"
+            app:destination="@id/confirmation" />
+    </activity>
+</navigation>

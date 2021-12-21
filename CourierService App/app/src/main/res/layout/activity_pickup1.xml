@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pickup1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Pickup Details"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/paddr1"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="from"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintVertical_bias="0.025" />
+
+                <EditText
+
+                    android:id="@+id/paddr2"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Landmark"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintVertical_bias="0.025" />
+
+
+                <EditText
+                    android:id="@+id/ptime"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Time"
+                    android:inputType="time"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintVertical_bias="0.025" />
+
+
+                <Button
+                    android:id="@+id/pdate"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Pickup Date"
+                    android:inputType="date"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintVertical_bias="0.079" />
+
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:id="@+id/Date_display"/>
+
+
+                <EditText
+                    android:id="@+id/ppin"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                    app:layout_constraintVertical_bias="0.027" />
+
+                <EditText
+                    android:id="@+id/pphone"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/pmail"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Gmail"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <Button
+                    android:id="@+id/pnext"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:text="Next"
+                    tools:layout_editor_absoluteX="125dp"
+                    tools:layout_editor_absoluteY="1009dp" />
+
+                <Button
+                    android:id="@+id/preset"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:text="Reset"
+                    tools:layout_editor_absoluteX="125dp"
+                    tools:layout_editor_absoluteY="1009dp" />
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

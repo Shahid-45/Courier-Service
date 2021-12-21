@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Registration"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+
+
+                <EditText
+                    android:id="@+id/regname"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/shapingthefield"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.039" />
+
+                <EditText
+
+                    android:id="@+id/regmail"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Gmail"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/shapingthefield"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintVertical_bias="0.025" />
+
+
+                <EditText
+                    android:id="@+id/regpwd"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/shapingthefield"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+                    app:layout_constraintVertical_bias="0.025" />
+
+                <EditText
+                    android:id="@+id/regcp"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:hint="Confirm Password"
+                    android:background="@drawable/shapingthefield"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintVertical_bias="0.079" />
+
+
+                <EditText
+                    android:id="@+id/regaddr"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shapingthefield"
+                    android:gravity="center"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                    app:layout_constraintVertical_bias="0.027" />
+
+                <EditText
+                    android:id="@+id/regpin"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:background="@drawable/shapingthefield"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/regcity"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:hint="City"
+                    android:background="@drawable/shapingthefield"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/regst"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:hint="State"
+                    android:background="@drawable/shapingthefield"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/regph"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:background="@drawable/shapingthefield"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <Button
+                    android:id="@+id/regSubmit"
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:background="@drawable/shapingthefield"
+                    tools:layout_editor_absoluteX="125dp"
+                    tools:layout_editor_absoluteY="1009dp" />
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
